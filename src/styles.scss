@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+
+// @ng-select
+@import "~@ng-select/ng-select/themes/default.theme.css";
+
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+@import 'assets/scss/variables.scss'; // Customer Variables for Bootstrap 4 compilation
+
+$colors: (
+    tourmie-blue: $tourmie-blue,
+    tourmie-orange: $tourmie-orange,
+    tourmie-dark-blue: $tourmie-dark-blue,
+    tourmie-lightblue: $tourmie-lightblue,
+    tourmie-gray: $tourmie-gray,
+    tourmie-lightgray: $tourmie-lightgray,
+    tourmie-lightgray2: $tourmie-lightgray2,
+    tourmie-white: $tourmie-white
+);
+
+$theme-colors: (
+    tourmie-blue: $tourmie-blue,
+    tourmie-orange: $tourmie-orange,
+    tourmie-dark-blue: $tourmie-dark-blue,
+    tourmie-lightblue: $tourmie-lightblue,
+    tourmie-gray: $tourmie-gray,
+    tourmie-lightgray: $tourmie-lightgray,
+    tourmie-lightgray2: $tourmie-lightgray2,
+    tourmie-white: $tourmie-white,
+);
+
+@import "~bootstrap"; // include bootstrap to recompile the Bootstrap 4 elements for the new custom colors
+
+@import '~bootstrap/scss/buttons'; // include buttons to override the button colors for new custom colors
+
+@import '~ngx-toastr/toastr-bs4-alert';
