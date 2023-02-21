@@ -10,6 +10,16 @@ export class HomePageComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
+    const name = "John";
+
+    if (!name) {
+      console.log('test');
+    }
+
   }
+
+
+
 
 }
