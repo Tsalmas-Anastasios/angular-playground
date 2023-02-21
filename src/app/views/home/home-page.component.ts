@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgxPubSubService } from '@pscoped/ngx-pub-sub';
 
 @Component({
   selector: 'app-home-page',
@@ -11,11 +12,6 @@ export class HomePageComponent implements OnInit {
 
   ngOnInit(): void {
 
-    const name = "John";
-
-    if (!name) {
-      console.log('test');
-    }
 
   }
 
