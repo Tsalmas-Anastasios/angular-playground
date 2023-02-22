@@ -1,1 +1,21 @@
 <p>home-page works!</p>
+
+
+<!-- {{user | json}} -->
+
+
+<div *ngFor="let address of user.addresses; let i = index;">
+
+    <div class="row" *ngIf="i < 2">
+
+        <div class="col-sm-12">
+
+            <p [ngClass]="{'text-success': address.country === 'GR', 'text-danger': address.country !== 'GR'}">
+                {{address.street}}, {{address.city}}, {{address.country}}
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
