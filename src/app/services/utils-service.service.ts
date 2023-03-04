@@ -4,19 +4,27 @@ import { Address } from '../models';
 @Injectable({
   providedIn: 'root'
 })
-export class UtilsServiceService {
+export class UtilsService {
 
   constructor() { }
 
+
+  test(): number {
+    return 1;
+  }
+
+
+
   async delay(seconds: number): Promise<void> {
 
-    return new Promise((resolve) => {
+    return new Promise((resolve, reject) => {
 
       setTimeout(resolve, seconds * 1000)
 
     });
 
   }
+
 
 
   getUserAddressesSync(): Address[] { // synchronous method

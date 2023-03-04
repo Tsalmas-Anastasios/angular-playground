@@ -1,4 +1,4 @@
-import { UtilsServiceService } from '../../services/utils-service.service';
+import { UtilsService } from '../../services/utils-service.service';
 import { User, Address } from '../../models';
 import { Component, OnInit } from '@angular/core';
 import * as moment from 'moment-timezone';
@@ -13,10 +13,15 @@ export class HomePageComponent implements OnInit {
   public user: User;
 
   constructor(
-    private utilsService: UtilsServiceService
+    private utilsService: UtilsService
   ) { }
 
   async ngOnInit(): Promise<void> {
+
+
+    // this.utilsService.test()
+
+
 
     // Object initialization
     this.user = new User({
@@ -61,7 +66,7 @@ export class HomePageComponent implements OnInit {
 
 
 
-    console.log('1');
+    // console.log('1');
 
     const promises: [
       Promise<Address[]>,
@@ -83,7 +88,7 @@ export class HomePageComponent implements OnInit {
     this.user.addresses = addresses;
 
 
-    console.log('2');
+    // console.log('2');
 
 
 
